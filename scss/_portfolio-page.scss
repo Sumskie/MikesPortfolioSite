@@ -1,0 +1,126 @@
+section.portfolio-page {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    background-color: $gray-500;
+    border: none;
+    padding-top: 26px;
+    padding-bottom: 14px;
+    overflow-y: auto;
+
+    .align-left {
+        text-align: left;
+    }
+    .icon {
+        margin-right: 12px;
+        height: 25px;
+        width: 25px;
+    }
+
+    .list-group {
+        background-color: transparent;
+        .list-group-item {
+            background-color: transparent;
+            text-align: left;
+            color: #fff;
+            
+        }
+    }
+
+    .example {
+        img {
+            height: 400px;
+            width: auto;
+        }
+        p {
+            color: $gray-200;
+        }
+    }
+
+    .container {
+        margin-bottom: 100px;
+
+        .content-1 {
+            height: 100%;
+            border-right: 1px solid $gray-300;
+        }
+        .content-2 {
+            top: 0px;
+            height: calc(100% - 120px);
+            width: auto;
+        }
+        .label-wrapper {
+            text-align: left;
+            margin-bottom: 12px;
+            h4 {
+                text-align: left;
+                line-height: 48px;
+            }
+            .label {
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+.footer-nav {
+    position: fixed;
+    bottom: 0px;
+    height: 96px;
+    width: 100%;
+    background-color: $gray-500;;
+    .nav {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;   
+        .nav-item {
+            height: 100%;
+            width: calc(100% / 5);
+            background-color: $gray-700;
+            text-align: center;
+            font-size: 24px;
+            font-style: bold;
+            color: $gray-600;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            overflow: hidden;
+            .nav-link {
+                padding-top: 10px;
+                border: none;
+                height: 100%;
+                color: $gray-500;
+            }
+            .nav-link:hover {
+                color: $gray-300;
+                border: none;
+            } 
+            .nav-link.active {
+                color: #fff;
+                background-color: $gray-500;
+            }
+        }
+        .nav-item.active:hover {
+            background-color: $gray-500;
+            color: #fff;
+        }
+        .nav-item:hover {
+            border: none;
+            background-color: $gray-600;
+        }
+        .nav-item:first-child {
+            margin-left: 0px;
+        }   
+        .nav-item:last-child {
+            margin-right: 0px;
+        }       
+    }
+}
+
+@media(max-width:768px) {
+    .footer-nav {
+        display: none !important;
+    }
+}
+  
